@@ -144,7 +144,7 @@ export const Pet = {
         });
     },
     getFromName: (name: string): Pet[] => {
-        data.filter((item) => {
+        return data.filter((item) => {
             if (item.name.toLowerCase().indexOf(name.toLowerCase()) > -1) {
                 return true;
             } else {
